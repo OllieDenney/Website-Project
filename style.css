@@ -102,3 +102,62 @@ box-sizing: border-box;
   text-align: center;
   font-size: 40px;
 }
+
+.limited-container {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.limited-content-container {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-around;
+  padding: 50px;
+}
+
+
+
+.brands-container {
+  width: 800px;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+
+.brands-banner {
+  align-content: center;
+  text-align: center;
+  font-size: 25px;
+}
+
+.brands-content-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 50px;
+
+}
+
+.brands-content-row > div {
+
+}
+
+.bottom-section-container {
+  width: 800px;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+
+.bottom-section-content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 50px;
+}
+
+.bottom-section-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
