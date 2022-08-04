@@ -262,7 +262,7 @@ box-sizing: border-box;
   justify-content: center;
 }
 
-.social-media-links > img {
+.social-media-links > a > img {
   width: 25px;
   margin: 0 10px;
 }
@@ -490,6 +490,7 @@ box-sizing: border-box;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  flex-wrap: wrap;
   padding: 30px 0;
 }
 
@@ -499,6 +500,48 @@ box-sizing: border-box;
 }
 
 .enquiry-box-container {
-  width: 40%;
+  width: 60%;
   padding: 50px;
+}
+
+.contact-me-basic > h1 {
+  font-size: 55px;
+  margin-bottom: 40px;
+  font-weight: 200;
+  font-family: 'Montserrat', sans-serif;
+  font-style: italic;
+}
+
+.contact-me-basic > h2 {
+  font-size: 20px;
+  padding: 10px 0;
+  font-weight: 200;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical
+}
+
+input[type=submit] {
+  background-color: #2e393f;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #4D5B5A;
+}
+
+form > label {
+  font-weight: 200;
 }

@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&family=Montserrat:ital,wght@0,400;0,900;1,900&family=Yellowtail&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&family=Montserrat:ital,wght@0,100;0,200;0,400;0,900;1,900&family=Yellowtail&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100;1,200&display=swap" rel="stylesheet">
     <script src="script.js" ></script>
     <title>Contact | Photography</title>
     <script src="script.js" ></script>
@@ -56,15 +57,36 @@
           <div class="contact-me-content">
             <div class="contact-me-basic">
               <h1>Get in Touch</h1>
-              <h2>Email</h2>
-              <h2>Phone Number</h2>
-              <h2>PO box</h2>
+              <h2><b>Email</b><br><em> name_photography@outlook.com</em></h2>
+              <h2><b>Phone Number</b><br><em> +64 021134543</em></h2>
+              <h2><b>PO box</b><br><em> PO Box 10928, Queenstown, NZ</em></h2>
             </div>
           </div>
         </div>
         <div class="enquiry-box-container">
           <div class="enquiry-box">
-            enquiry-box
+            <form action="action_page.php">
+
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+              <label for="country">Country</label>
+              <select id="country" name="country">
+                <option value="usa">New Zealand</option>
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+              </select>
+
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+              <input type="submit" value="Submit">
+
+            </form>
           </div>
 
         </div>
@@ -75,13 +97,27 @@
       <div class="footer-container">
         <div class="footer-content-container">
           <div class="social-media-links">
-            <img src="icons/facebook-icon.png">
-            <img src="icons/facebook-icon.png">
-            <img src="icons/facebook-icon.png">
-            <img src="icons/facebook-icon.png">
-            <img src="icons/facebook-icon.png">
-            <img src="icons/facebook-icon.png">
-            <img src="icons/facebook-icon.png">
+            <a href="facebook.com" target="_blank">
+              <img src="icons/facebook-icon.png" onclick="facebook.com">
+            </a>
+            <a href="facebook.com" target="_blank">
+              <img src="icons/instagram-icon.png">
+            </a>
+            <a href="linkedin.com" target="_blank">
+              <img src="icons/linkedin-icon.png">
+            </a>
+            <a href="pinterest.com" target="_blank">
+              <img src="icons/pinterest-icon.png">
+            </a>
+            <a href="twitter.com" target="_blank">
+              <img src="icons/twitter-icon.png">
+            </a>
+            <a href="whatsapp.com" target="_blank">
+              <img src="icons/whatsapp-icon.png">
+            </a>
+            <a href="youtube.com" target="_blank">
+              <img src="icons/youtube-icon.png">
+            </a>
           </div>
           <div class="footer-nav-links">
             <div>home</div>
