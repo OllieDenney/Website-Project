@@ -49,7 +49,7 @@ box-sizing: border-box;
   display: flex;
   flex-direction: row;
   width: 30%;
-  height: 600px;
+  height: 60px;
   position: fixed;
 	z-index: 999;
   padding-top: 10px;
@@ -120,7 +120,48 @@ box-sizing: border-box;
 }
 
 .limited-prints-content {
-  padding: 50px;
+  padding: 0px;
+  width: 333px;
+  position: relative;
+}
+.limited-prints-sale-banner {
+  position: absolute;
+  top: 10px;
+  left: 8px;
+  z-index: 999;
+  background-color: white;
+  padding: 10px 25px;
+  clip-path: polygon(100% 0, 100% 20%, 82% 100%, 0 96%, 0 0);
+  border-radius: 2px;
+  }
+
+.limited-content-image {
+  width: 100%;
+  height: auto;
+  z-index: 998;
+}
+
+.special-prints-content-description {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  color: rgba(255, 255, 255, 0.0);
+  font-size: 20px;
+  font-weight: 100;
+  transition: color 2s;
+  font-style: italic;
+}
+
+.special-prints-price {
+  font-size: 15px;
+  font-style: normal;
+}
+
+.special-prints-content-description:hover {
+  color: rgba(255, 255, 255, 1);
 }
 
 
@@ -240,7 +281,7 @@ box-sizing: border-box;
 
 .footer-content-container {
   display: flex;
-  width: 80%;
+  width: 60%;
   height: 150px;
   flex-direction: column;
   text-align: center;
@@ -268,7 +309,8 @@ box-sizing: border-box;
 }
 
 .footer-copyright-tag {
-  padding-top: 10px;
+  padding-top: 20px;
+  font-size: 10px;
 }
 
 
