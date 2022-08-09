@@ -8,6 +8,11 @@ box-sizing: border-box;
 
 /* Nav sections */
 
+body {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+
 .nav-container {
   width: 100%;
 	display: flex;
@@ -80,6 +85,7 @@ box-sizing: border-box;
 	height: 950px;
   display: block;
   background-image: url('home-page-header-image2-2.jpg');
+  background-color: white;
 }
 
 .header-content-container {
@@ -104,6 +110,7 @@ box-sizing: border-box;
 .limited-container {
   width: 1000px;
   margin: 0 auto;
+  background-color: white;
 }
 
 .limited-content-container {
@@ -135,6 +142,12 @@ box-sizing: border-box;
   padding: 10px 25px;
   clip-path: polygon(100% 0, 100% 20%, 82% 100%, 0 96%, 0 0);
   border-radius: 2px;
+  }
+
+.limited-content-image1 {
+    width: 100%;
+    height: auto;
+    z-index: 998;
   }
 
 .limited-content-image {
