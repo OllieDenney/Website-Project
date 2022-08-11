@@ -423,44 +423,78 @@ body {
   width: 1000px;
   column-count: 3;
   column-gap: 5px;
-  margin: 0 auto;
+  margin: 20px auto;
+  background-color: white;
+  padding: 20px;
 }
 
-.gallery > img {
- width: 100%;
- height: auto;
- margin-bottom: 2.5px;
+.print-image-container {
+  width: 100%;
+  height: auto;
+  margin-bottom: 2.5px;
+  z-index: 998;
+  position: relative;
 
- transition: transform 1s;
- transition: padding 1s;
+  transition: 1s ease;
 }
 
-.gallery > img:hover {
-  transform: scale(0.9);
-  padding: 30px;
+.print-image-container:hover {
+  transform: scale(0.95);
+  opacity: 0.6;
 }
 
-.prints-content-description {
-  display: block;
+.print-image-container > img {
+  width: inherit;
+}
+
+.print-image-container > img:hover + .prints-content-description {
+  transform: scale(0.95);
+  color: rgba(0, 0, 0, 5);
+  opacity: 1;
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 35%;
   transform: translate(-50%, -50%);
-  z-index: 999;
-  color: rgba(255, 255, 255, 0.0);
   font-size: 20px;
-  font-weight: 100;
-  transition: color 2s;
-  font-style: italic;
-}
-
-.prints-price {
-  font-size: 15px;
-  font-style: normal;
 }
 
 .prints-content-description:hover {
-  color: rgba(255, 255, 255, 1);
+  top: 50%;
+  left: 35%;
+}
+
+.prints-content-description {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+
+  transition: 0.5s ease;
+}
+
+
+
+.prints-content-description > h {
+  text-align: center;
+  font-size: 25px;
+  font-weight: lighter;
+  font-family: 'Yellowtail', cursive;
+}
+
+.prints-price {
+  font-size: 18px;
+  font-style: bolder;
+}
+
+.prints-content-explanation {
+  font-size: 17px;
+  margin: 15px 0;
+  font-weight: bolder;
+}
+
+.prints-content-description:hover {
+  opacity: 1;
 }
 
 
