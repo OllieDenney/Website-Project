@@ -518,15 +518,14 @@ font-weight: bolder;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  outline: 2px;
-  outline-style: solid;
-  padding: 10px;
   margin: 10px;
-
   position: relative;
   transform: translateY(150px);
   opacity: 0;
   transition: 1s all ease;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-image: url(images/capturing-prints.jpg);
+  background-size: cover;
 }
 
 .prints-bottom-section-row.active{
@@ -535,14 +534,13 @@ font-weight: bolder;
 }
 
 .prints-bottom-section-image {
-
+  background-color: rgba(0, 0, 0, 0.5);
   width: 50%;
   height: 250px;
-}
+  padding: 20px;
+  padding-top: 70px;
+  color: white;
 
-.prints-bottom-section-image > img {
-  width: auto;
-  height: 250px;
 }
 
 .right-print-image {
@@ -553,15 +551,16 @@ font-weight: bolder;
   width: 50%;
   height: 250px;
   padding: 30px;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .prints-bottom-section-content > h1 {
   padding: 10px;
   font-family: 'Montserrat', sans-serif;
-  font-size: 30px;
+  font-size: 50px;
   font-weight: lighter;
   font-style: italic;
-  color: #023E8A
+  color: white;
 }
 
 #prints-content-2 {
