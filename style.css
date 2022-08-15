@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+
 * {
 outline: 0;
 padding: 0;
@@ -66,7 +72,6 @@ body {
   color: black;
   font-family: 'Montserrat', sans-serif;
   font-size: 18px;
-  font-weight: 600;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -118,7 +123,6 @@ body {
   width: 100%;
   flex-direction: row;
   text-align: center;
-  justify-content: space-around;
 }
 
 .limited-content-row {
@@ -134,15 +138,21 @@ body {
   display: flex;
   width: 100%;
   flex-direction: row;
-  text-align: center;
-  justify-content: space-around;
+
 }
+
 
 
 
 .limited-prints-content {
   padding: 0px;
   width: 333px;
+  position: relative;
+}
+
+.limited-prints-content-main {
+  padding: 0px;
+  width: 100%;
   position: relative;
 }
 
@@ -159,9 +169,8 @@ body {
   }
 
 .limited-content-image1 {
-    width: 120%;
-    height: auto;
-    z-index: 998;
+    background-image: url(images/image-001.jpg);
+    background-size: cover;
   }
 
 .limited-content-image {
@@ -170,29 +179,6 @@ body {
   z-index: 998;
 }
 
-
-.special-prints-content-description {
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 999;
-  color: rgba(255, 255, 255, 0.0);
-  font-size: 20px;
-  font-weight: 100;
-  transition: color 2s;
-  font-style: italic;
-}
-
-.special-prints-price {
-  font-size: 15px;
-  font-style: normal;
-}
-
-.special-prints-content-description:hover {
-  color: rgba(255, 255, 255, 1);
-}
 
 
 
@@ -502,7 +488,7 @@ body {
   padding-top: 30px;
   padding-left: 40px;
   background-color: white;
-font-weight: bolder;
+  font-weight: bolder;
 }
 
 .prints-bottom-section-content-container {
@@ -524,8 +510,19 @@ font-weight: bolder;
   opacity: 0;
   transition: 1s all ease;
   background-color: rgba(0, 0, 0, 0.5);
-  background-image: url(images/capturing-prints.jpg);
   background-size: cover;
+}
+
+#capturing-the-print-background {
+  background-image: url(images/capturing-prints.jpg);
+}
+
+#editing-the-print-background {
+  background-image: url(images/editing-prints.jpg);
+}
+
+#printing-the-print-background {
+  background-image: url(images/printing-prints.jpg);
 }
 
 .prints-bottom-section-row.active{
@@ -534,17 +531,47 @@ font-weight: bolder;
 }
 
 .prints-bottom-section-image {
-  background-color: rgba(0, 0, 0, 0.5);
+  background: linear-gradient(90deg, rgba(255,255,255,0.5) 83%, rgba(150,150,150,0.5) 100%);
   width: 50%;
   height: 250px;
   padding: 20px;
-  padding-top: 70px;
-  color: white;
+  padding-top: 55px;
+}
 
+.prints-bottom-section-image > p {
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+}
+
+.prints-bottom-section-image-2 {
+  background: linear-gradient(90deg, rgba(150,150,150,0.5) 17%, rgba(255,255,255,0.5) 100% );
+  width: 50%;
+  height: 250px;
+  padding: 20px;
+  padding-top: 55px;
+}
+
+.prints-bottom-section-image-2 > p {
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
 }
 
 .right-print-image {
   float: right;
+}
+
+.bottom-section-divider {
+  font-size: 50px;
+  color: white;
+  font-weight: bolder;
+  line-height: 250px;
+  background-color: rgba(150,150,150,0.5);
 }
 
 .prints-bottom-section-content {
@@ -552,19 +579,39 @@ font-weight: bolder;
   height: 250px;
   padding: 30px;
   background-color: rgba(0, 0, 0, 0.5);
+  background: linear-gradient(90deg, rgba(0,0,0,0.5) 17%, rgba(150,150,150,0.5) 100% );
+}
+
+.prints-bottom-section-content-2 {
+  width: 50%;
+  height: 250px;
+  padding: 30px;
+  background: linear-gradient(90deg, rgba(150,150,150,0.5) 17%, rgba(0,0,0,0.5) 100% );
 }
 
 .prints-bottom-section-content > h1 {
   padding: 10px;
+  padding-top: 30px;
   font-family: 'Montserrat', sans-serif;
   font-size: 50px;
-  font-weight: lighter;
+  font-weight: 800;
+  font-style: italic;
+  color: white;
+}
+
+.prints-bottom-section-content-2 > h1 {
+  padding: 10px;
+  padding-top: 30px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 50px;
+  font-weight: 800;
   font-style: italic;
   color: white;
 }
 
 #prints-content-2 {
   text-align: left;
+
 }
 
 #prints-content-1 {
