@@ -2,7 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
 * {
 outline: 0;
@@ -94,7 +96,7 @@ body {
 }
 
 .header-content-container {
-  padding: 300px:
+
 }
 
 .header-text {
@@ -437,7 +439,7 @@ body {
 
 .print-image-container > img:hover + .prints-content-description {
   transform: scale(0.95);
-  color: rgba(0, 0, 0, 5);
+  color: rgba(0, 0, 0, 1);
   opacity: 1;
   position: absolute;
   top: 50%;
@@ -472,7 +474,7 @@ body {
 
 .prints-price {
   font-size: 18px;
-  font-style: bolder;
+  font-weight: bold;
 }
 
 .prints-content-explanation {
@@ -631,21 +633,108 @@ body {
 
 /* Collaborations Section */
 
+.collab-header-container {
+  margin-top: 80px;
+  padding-top: 100px;
+  background-repeat: no-repeat;
+ 	background-size: 100% auto;
+  width: 100%;
+	height: 450px;
+  display: block;
+  background-image: url(images/collab-image/collab-header-image.jpg);
+  background-color: white;
+}
+
+.collab-header-content-container {
+
+}
+
+.collab-header-text {
+  font-size: 80px;
+  font-weight: 800;
+  text-align: left;
+  margin-top: 3%;
+  margin-left: 10%;
+  color: #DEE2E6;
+  font-family: 'Montserrat', sans-serif;
+}
+
 .collab-container {
-  width: 1000px;
-  margin: 100px auto;
-  background-color: rgba(0, 0, 0, 0.2);
+  width: 1050px;
+  margin: 0px auto;
+  background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 100px 0;
+  padding: 10px 0;
 }
 
 .collab-content-container {
-  width: 90%;
-  padding: 100px 50px;
-  margin: 20px auto;
-  background-color: rgba(0, 0, 0, 0.4);
+  width: 1000px;
+  height: 230px;
+  margin: 30px auto;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+#collab-content-1 {
+  background-image: url(images/collab-image/boxed-water-collab.PNG);
+}
+
+#collab-content-2 {
+  background-image: url(images/collab-image/wasa-crispbread-collab.PNG);
+}
+
+#collab-content-3 {
+  background-image: url(images/collab-image/hearn-catering-collab.PNG);
+}
+
+#collab-content-4 {
+  background-image: url(images/collab-image/liaw-architecture-collab.PNG);
+}
+
+#collab-content-5 {
+  background-image: url(images/collab-image/tourism-ontario-collab.PNG);
+}
+
+.collab-content {
+  padding: 20px;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.collab-content > h1 {
+  font-size: 40px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+}
+
+.collab-content > p {
+  font-size: 17px;
+  width: 85%;
+  font-weight: 300;
+  margin: 10px 0;
+  font-style: italic;
+  line-height: 22px;
+}
+
+.collab-content > hr {
+  width:60%;
+  height:4px;
+  color: white;
+  background-color: white;
+  text-align: left;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+.collab-content > a {
+  color: white;
+  font-size: 20px;
+  padding-top: 20px;
+  font-weight: 700;
+  text-decoration: none;
+  font-style: italic;
 }
 
 .how-to-collab-container {
@@ -665,6 +754,7 @@ body {
   margin: 20px auto;
   background-color: rgba(0, 0, 0, 0.4);
 }
+
 
 /* About Me Page */
 
