@@ -741,6 +741,47 @@ body {
   font-style: italic;
 }
 
+.collab-with-me-content {
+  padding: 20px;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.collab-with-me-content > h1 {
+  font-size: 45px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+
+}
+
+.collab-with-me-content > p {
+  font-size: 18px;
+  width: 85%;
+  font-weight: 300;
+  margin: 10px 0;
+  font-style: italic;
+  line-height: 22px;
+}
+
+.collab-with-me-content > hr {
+  width:60%;
+  height:4px;
+  color: white;
+  background-color: white;
+  text-align: left;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+.collab-with-me-content > a {
+  color: white;
+  font-size: 17px;
+  padding-top: 20px;
+  font-weight: 800;
+  text-decoration: none;
+  font-style: italic;
+}
+
 .collab-with-me-content-container {
   width: 1000px;
   height: 434px;
