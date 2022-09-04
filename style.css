@@ -5,6 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
 
 * {
 outline: 0;
@@ -43,11 +44,10 @@ body {
 	font-weight: bold;
 }
 
-.nav-logo {
-  font-family: 'Yellowtail', cursive;
-  font-size: 30px;
-  font-weight: lighter;
-  padding: 30px;
+.nav-container-left > img {
+  width: 50px;
+  margin-left: 20px;
+  margin-bottom: 6px;
 }
 
 .nav-container-right {
@@ -716,7 +716,7 @@ body {
 .collab-content > p {
   font-size: 14px;
   width: 85%;
-  font-weight: 300;
+  font-weight: 500;
   margin: 10px 0;
   font-style: italic;
   line-height: 22px;
@@ -750,7 +750,7 @@ body {
 .collab-with-me-content > h1 {
   font-size: 45px;
   font-family: 'Montserrat', sans-serif;
-  font-weight: 200;
+  font-weight: 700;
 
 }
 
@@ -758,7 +758,7 @@ body {
   font-size: 18px;
   width: 85%;
   font-weight: 300;
-  margin: 10px 0;
+  margin: 30px 0;
   font-style: italic;
   line-height: 22px;
 }
@@ -770,16 +770,25 @@ body {
   background-color: white;
   text-align: left;
   border-radius: 5px;
-  margin: 10px 0;
+  margin: 20px 0;
 }
 
 .collab-with-me-content > a {
-  color: white;
-  font-size: 17px;
-  padding-top: 20px;
+  color: #1E88E5;
+  font-size: 18px;
+  padding-top: 30px;
   font-weight: 800;
   text-decoration: none;
+  border-bottom: 2px solid;
   font-style: italic;
+}
+
+.collab-with-me-content > a > span {
+  font-style: normal;
+}
+
+.collab-content > a > span {
+  font-style: normal;
 }
 
 .collab-with-me-content-container {
@@ -814,37 +823,46 @@ body {
 .about-me-container {
   width: 1000px;
   margin: 100px auto;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 30px 0;
+  padding: 0px 0;
 }
 
 .about-me-content {
-  width: 90%;
+  width: 95%;
+  height: 400px;
   padding: 50px;
+  padding-top: 30px;
   padding-bottom: 40px;
   margin: 20px auto;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: white;
+  background-image: url(images/about-page-header-white.png);
+  background-size: cover;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .about-me-content > h1 {
-  font-size: 40px;
-  font-weight: lighter;
-  padding: 30px 0;
+  font-size: 45px;
+  font-weight: 200;
+  font-family: 'Montserrat', sans-serif;
+  padding-bottom: 10px;
+}
+
+.about-me-content > h1 > span {
+  font-size: 30px;
 }
 
 .about-me-content > p {
-  padding-bottom: 200px;
+  padding-bottom: 40px;
+  width: 53%;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 22px;
 }
 
-.about-social-media-links {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  width: 40%;
-  flex-wrap: wrap;
+.about-socials {
+  width: 34%;
 }
 
 .about-social-media-links > img {
@@ -857,8 +875,12 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 50px;
-  background-color: rgba(0, 0, 0, 0.4);
+  padding: 0px;
+  background-color: white;
+  width: 95%;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  padding-top: 20px;
 }
 
 .about-me-photos > img {
