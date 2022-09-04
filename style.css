@@ -44,10 +44,9 @@ body {
 	font-weight: bold;
 }
 
-.nav-container-left > img {
+.nav-container-left > a > img {
   width: 50px;
   margin-left: 20px;
-  margin-bottom: 6px;
 }
 
 .nav-container-right {
@@ -651,7 +650,7 @@ body {
 
 .collab-header-text {
   font-size: 80px;
-  font-weight: 800;
+  font-weight: 300;
   text-align: left;
   margin-top: 3%;
   margin-left: 10%;
@@ -893,12 +892,13 @@ body {
 .contact-me-container {
   width: 1000px;
   margin: 100px auto;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: white;
   display: flex;
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
   padding: 30px 0;
+  padding-bottom: 0px;
 }
 
 .contact-me-content-container {
@@ -931,6 +931,19 @@ body {
   font-weight: 400;
   font-family: 'Montserrat', sans-serif;
   font-style: italic;
+}
+
+.contact-me-basic > span {
+  font-size: 40px;
+}
+
+.contact-break {
+  width: 90%;
+  height: 4px;
+  color: black;
+  background-color: black;
+  border-radius: 5px;
+  margin: 10px 0;
 }
 
 input[type=text], select, textarea {
