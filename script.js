@@ -28,32 +28,38 @@ function reveal() {
 
 window.addEventListener("scroll", reveal);
 
-let slideIndex = 1;
-console.log(slideIndex)
 
-setInterval(plusSlides(slideIndex), 1000);
+let slideIndex = 0;
+var i = 0;
+console.log(i)
+showSlides(i);
 
-function plusSlides(slideIndex) {
-  showSlides(slideIndex += 1);
-	console.log(slideIndex)
-}
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
+function showSlides(i) {
+	console.log("balls", i)
+	i ++
+	console.log("balls", i)
+  var slide1 = document.querySelectorAll("#mySlides1");
+	var slide2 = document.querySelectorAll("#mySlides2");
+	var slide3 = document.querySelectorAll("#mySlides3");
+	console.log("balls")
+  if (i === 1){
+		console.log("balls")
+		slide1.style.display = "block";
+		slide2.style.display = "hidden";
+		slide3.style.display = "none";
+		console.log("balls")
+	}
+	if (i === 2){
+		slide1.style.display = "none";
+		slide2.style.display = "block";
+		slide3.style.display = "none";
+	}
+	if (i === 3){
+		slide1.style.display = "none";
+		slide2.style.display = "none";
+		slide3.style.display = "block";
+		i = 0
+	}
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
