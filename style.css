@@ -218,7 +218,7 @@ body {
 .youtube-bottom-content {
   width: 33.3%;
   height: 200px;
-  background-color: rgba(0, 0, 0, 0.2);
+
 }
 
 .youtube-bottom-content-2 {
@@ -226,6 +226,23 @@ body {
   width: 33.3%;
   height: 200px;
 }
+
+.youtube-highlight {
+  position: absolute;
+  color: white;
+  width: 333px;
+  height: 200px;
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
+}
+
+.youtube-highlight:hover {
+    color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
+}
+
+
+
 
 
 .brands-container {
