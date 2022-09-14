@@ -1,3 +1,6 @@
+let slideIndex = 0;
+showSlides();
+
 
 window.onscroll = function(){
 	var a = document.getElementById("nav-container-fade");
@@ -29,37 +32,19 @@ function reveal() {
 window.addEventListener("scroll", reveal);
 
 
-let slideIndex = 0;
-var i = 0;
-console.log(i)
-showSlides(i);
-
-
-function showSlides(i) {
-	console.log("balls", i)
-	i ++
-	console.log("balls", i)
-  var slide1 = document.querySelectorAll("#mySlides1");
-	var slide2 = document.querySelectorAll("#mySlides2");
-	var slide3 = document.querySelectorAll("#mySlides3");
-	console.log("balls")
-  if (i === 1){
-		console.log("balls")
-		slide1.style.display = "block";
-		slide2.style.display = "hidden";
-		slide3.style.display = "none";
-		console.log("balls")
-	}
-	if (i === 2){
-		slide1.style.display = "none";
-		slide2.style.display = "block";
-		slide3.style.display = "none";
-	}
-	if (i === 3){
-		slide1.style.display = "none";
-		slide2.style.display = "none";
-		slide3.style.display = "block";
-		i = 0
-	}
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
   setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
