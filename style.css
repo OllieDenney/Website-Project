@@ -415,6 +415,12 @@ body {
 
 #project-to-shoot-text {
   float: right;
+  text-align: right;
+}
+
+#project-to-shoot-text > hr {
+  float: right;
+  text-align: right;
 }
 
 .home-bottom-section-content > h1 {
@@ -425,11 +431,10 @@ body {
 }
 
 .home-bottom-section-content > hr {
-  width:60%;
+  width:20%;
   height:4px;
   color: white;
   background-color: white;
-  text-align: left;
   border-radius: 5px;
   margin: 20px 0;
 }
