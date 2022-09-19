@@ -442,28 +442,24 @@ body {
 
 
 .brands-container {
-  width: 1000px;
-  margin: 0 auto;
-  padding-top: 100px;
+  width: 1050px;
+  margin: 10px auto;
+  padding: 25px;
+  background-color: white;
 }
 
 .brands-banner {
   align-content: center;
-  text-align: center;
-  font-size: 25px;
-  padding: 30px;
+  text-align: left;
+  font-size: 45px;
+  padding-bottom: 10px;
+  font-family: 'Montserrat', sans-serif;
 }
 
-.brands-content-row {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  padding: 50px;
-  background-color: rgba(0, 0, 0, 0.1);
-}
+.home-collab-image {
+  width: 1000px;
+  height: 230px;
 
-.brands-content-row > div {
-  padding: 50px 0;
 }
 
 #project-to-shoot {
@@ -482,35 +478,38 @@ body {
   text-align: left;
 }
 
+.right-hr {
+  float: right;
+  margin: 25px;
+}
+
 .home-bottom-section {
   background-color: white;
   width: 1050px;
-  padding: 25px 25px;
+  height: 700px;
+  padding: 25px;
   margin: 0 auto;
+  margin-bottom: 60px;
 }
 
 .home-bottom-section-content {
   color: black;
   font-family: 'Montserrat', sans-serif;
-  width: 60%;
+  width: 100%;
   float: right;
-}
-
-#project-to-shoot-text {
-  float: right;
-  text-align: right;
-}
-
-#project-to-shoot-text > hr {
-  float: right;
-  text-align: right;
 }
 
 .home-bottom-section-content > h1 {
-  font-size: 45px;
+  font-size: 50px;
   font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
+  font-weight: 300;
+}
 
+.home-bottom-section-content > h2 {
+  font-size: 35px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  margin: 10px 0;
 }
 
 .home-bottom-section-content > hr {
@@ -545,7 +544,7 @@ body {
 
 .home-bottom-section-container {
   width: 1000px;
-  margin: 100px auto;
+  margin: 0px auto;
   background-color: rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
