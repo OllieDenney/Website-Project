@@ -67,6 +67,10 @@ body {
   padding-top: 10px;
 }
 
+#icon-image {
+  transition: 2s;
+}
+
 .nav-link {
   width: 200px;
   height: 60px;
@@ -89,6 +93,71 @@ body {
 
 /* Home page */
 
+.home-nav-container {
+  width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	height: 80px;
+	position: fixed;
+	top: 0;
+	transition: all 0.5s;
+	z-index: 999;
+}
+
+.home-nav-container-left {
+  text-align: center;
+	padding: 10px;
+	font-size: 32px;
+	display: flex;
+	align-items: center;
+	font-style: italic;
+	font-weight: bold;
+}
+
+.home-nav-container-left > a > img {
+  width: 50px;
+  margin-left: 20px;
+}
+
+.home-nav-container-right {
+  width: 30%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+  padding-right: 50px;
+}
+
+.home-nav-links-container {
+  display: flex;
+  flex-direction: row;
+  width: 30%;
+  height: 60px;
+  position: fixed;
+	z-index: 999;
+  padding-top: 10px;
+}
+
+.home-nav-link {
+  width: 200px;
+  height: 60px;
+  color: transparent;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 300;
+
+  transition: 2s;
+}
+
+.home-nav-filler {
+  background-color: white;
+  width: 100%;
+  height: 80px;
+}
+
 .home-header-container {
   margin-top: 80px;
   padding-top: 100px;
@@ -104,7 +173,7 @@ body {
 
 .home-header-content-container {
   width: 1000px;
-  margin: 80px auto;
+  margin: 0px auto;
 }
 
 .home-header-text {
@@ -122,9 +191,30 @@ body {
   margin: 15px;
 }
 
+.space-maker {
+  color: transparent;
+}
+
 #header-text {
   opacity: 0;
   transition: 2s;
+}
+
+#breaker-text {
+  opacity: 0;
+  transition: 2s;
+}
+
+#sub-text {
+  opacity: 0;
+  transition: 2s;
+}
+
+#new-header-text {
+  opacity: 0;
+  transition: 2s;
+  font-size: 90px;
+  font-weight: 200;
 }
 
 
