@@ -33,7 +33,7 @@ window.onscroll = function(){
 	var a = document.getElementById("nav-container-fade");
 	var top = window.scrollY;
 	console.log(top);
-	if (top >= 1080){
+	if (top >= 1000){
 		a.style.background = "white";
 		document.getElementById("home-nav-link-1").style.color = "black";
 		document.getElementById("home-nav-link-2").style.color = "black";
@@ -69,3 +69,20 @@ function reveal() {
 }
 
 window.addEventListener("scroll", reveal);
+
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
