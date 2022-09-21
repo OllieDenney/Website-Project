@@ -158,28 +158,6 @@ body {
   height: 80px;
 }
 
-@media (min-width: 300px) and (max-width: 800px) {
-  .dropdown {
-    display: inline-block;
-  }
-
-  .dropbtn {
-    display: block;
-  }
-
-  .home-nav-links-container {
-    display: none;
-  }
-
-  .home-nav-link {
-    display: hidden;
-  }
-
-  .home-nav-link {
-    color: pink;
-  }
-}
-
 .dropbtn {
   background-color: #3498DB;
   color: white;
@@ -350,7 +328,6 @@ body {
 
 .more-prints-content-container {
   width: 1000px;
-  height: ;
   background-color: white;
   margin: 0 auto;
 }
@@ -430,12 +407,10 @@ body {
 .youtube-bottom-content {
   width: 33.3%;
   height: 200px;
-
 }
 
-.youtube-bottom-content-2 {
-  background-color: rgba(0, 0, 0, 0.3);
-  width: 33.3%;
+.youtube-bottom-content > iframe {
+  width: 100%;
   height: 200px;
 }
 
@@ -488,6 +463,11 @@ body {
   font-size: 25px;
   font-weight: 300;
   font-family: 'Montserrat', sans-serif;
+}
+
+.youtube-highlight-main > iframe {
+  width: 100%;
+  height: 600px;
 }
 
 
@@ -1500,4 +1480,28 @@ input[type=submit]:hover {
 
 form > label {
   font-weight: 200;
+}
+
+
+
+@media all and (max-width: 767px) {
+  .dropdown {
+    display: inline-block;
+  }
+
+  .dropbtn {
+    display: block;
+  }
+
+  .home-nav-links-container {
+    display: none;
+  }
+
+  .home-nav-link {
+    display: none;
+  }
+
+  .home-nav-link {
+    color: pink;
+  }
 }
