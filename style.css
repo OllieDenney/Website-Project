@@ -1484,24 +1484,50 @@ form > label {
 
 
 
-@media all and (max-width: 767px) {
-  .dropdown {
-    display: inline-block;
+@media all and (max-width: 1050px) {
+  html {
+    transform: scale(0.7);
+    margin-top: -800px;
   }
 
-  .dropbtn {
-    display: block;
+  .prints-header-container {
+    width: 1000px;
+  }
+
+  .home-header-container {
+    width: 1000px;
+  }
+
+}
+
+@media all and (max-width: 850px) {
+  html {
+    transform: scale(0.5);
+    margin-top: -730px;
+  }
+
+  .prints-header-container {
+    width: 1000px;
+  }
+
+  .home-header-container {
+    width: 1050px;
+  }
+
+  .home-header-text {
+    margin-top: -150px;
+  }
+
+  .home-nav-container {
+    width: 1050px;
+  }
+
+  .home-nav-container-right {
+    width: 600px;
   }
 
   .home-nav-links-container {
-    display: none;
+    justify-content: space-around;
   }
 
-  .home-nav-link {
-    display: none;
-  }
-
-  .home-nav-link {
-    color: pink;
-  }
 }
