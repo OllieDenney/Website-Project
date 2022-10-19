@@ -1336,7 +1336,7 @@ body {
 
 .about-me-container {
   width: 1000px;
-  margin: 100px auto;
+  margin: 50px auto;
   margin-bottom: 20px;
   background-color: white;
   display: flex;
@@ -1496,7 +1496,30 @@ form > label {
 @media all and (max-width: 1050px) {
   html {
     transform: scale(0.7);
+  }
+
+  body {
+    margin: 0 auto;
+  }
+
+  .index-html {
     margin-top: -500px;
+  }
+
+  .prints-html {
+    margin-top: -900px;
+  }
+
+  .collab-html {
+    margin-top: -400px;
+  }
+
+  .about-html {
+    margin-top: -150px;
+  }
+
+  .contact-html {
+    margin-top: -190px;
   }
 
   .prints-header-container {
@@ -1513,7 +1536,7 @@ form > label {
   }
 
   .nav-link {
-    padding: 10px;
+    padding: 5px;
   }
 
   .prints-header-content-container {
@@ -1524,6 +1547,11 @@ form > label {
     width: 1050px;
     height: 400px;
   }
+
+  .nav-container {
+    width: 1050px;
+  }
+
 
 
 }
